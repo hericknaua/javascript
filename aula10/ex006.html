@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventod DOM</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div#area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            color: white;
+            font-size: 1.9em;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        <p>Clique para interagir...</p>   
+    </div>
+
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener("click", cliques)
+        a.addEventListener("mouseenter", enter)
+        a.addEventListener("mouseout", sair)
+
+        function cliques() {
+            a.innerHTML = "Você acabou de interagir, obrigado!"
+            a.style.background = "blue"
+        }
+
+        function enter() {
+            var a = document.querySelector("div#area")
+            a.innerHTML = "O mouse entrou na div"
+        }
+
+        function sair() {
+            var a = document.querySelector("div#area")
+            a.innerHTML = "O mouse saiu da div"
+            a.style.background = "green"
+        }
+    </script>
+</body>
+</html>

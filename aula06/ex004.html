@@ -14,9 +14,18 @@
 <body>
     <script>
         var nome = window.prompt("Informe aqui o sue nome: ")
+        var n1 = Number(prompt("Informe um número: "))
+        var n2 = Number(prompt("Informe mais um número: "))
+        var soma = n1 + n2
         document.write(`Olá ${nome}, seu nome tem ${nome.length} letras <br>`)
         document.write(`Seu nome em maiúscula é ${nome.toUpperCase()} <br>`)
-        document.write(`Olá ${nome}!, seu nome em minúscula é ${nome.toLowerCase()}`)
+        document.write(`Olá ${nome}!, seu nome em minúscula é ${nome.toLowerCase()} <br>`)
+        document.write(`E ${nome} por último a soma entre os valores ${n1} e ${n2} é igual a ${soma} <br>`)
+        var idade = 18
+        var sexo = "M"
+        var som = idade % 2 == 1?"Sim é igual a 0":"É diferente de zero"
+        var som1 = sexo == "F"?"Sim é F":"Não é F"
+        document.write(`${som}, ${som1}`)
     </script>
 </body>
 </html>
