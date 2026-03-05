@@ -57,7 +57,7 @@ function verificador() {
         img.src = "imagens/idoso-m.png"
         img.style.display = "block"
     }else if (sex[1].checked && anoesco <=100) {
-        msg.innerHTML = `Detectamos uma <strong>idosa</strong> com ${anoesco} anos`
+        msg.innerHTML = `Detectamos uma <strong>idosa</strong> com ${anoesco} anos.`
         msg.style.color = "black"
         img.src = "imagens/idoso-f.png"
         img.style.display = "block"
